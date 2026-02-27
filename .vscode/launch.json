@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Account Management System",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/accounting/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src/accounting",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Account Management System (with Inspector)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/accounting/index.js",
+      "restart": true,
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/src/accounting",
+      "runtimeArgs": [
+        "--inspect-brk"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}
