@@ -1,0 +1,41 @@
+{
+  "name": "account-management-system",
+  "version": "1.0.0",
+  "description": "Account Management System - Converted from COBOL to Node.js",
+  "main": "index.js",
+  "bin": {
+    "account-system": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --inspect=9229 index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "accounting",
+    "legacy-code-modernization",
+    "cobol-to-nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
